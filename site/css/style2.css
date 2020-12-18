@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body {
+    background-color: lightcyan;
+}
+#title {
+    color: maroon;
+
+}
+
+span:hover {
+    background-color: aqua;
+    cursor:crosshair;
+    animation:alternate-reverse;
+ }
+
+ #second {
+    background-color: lightsalmon;
+    font-size: 18px;
+    color:blueviolet;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px 10px 10px;
+    margin: 40px;
+    width: 300px;
+    height: 250px;
+    float: left;
+ }
+ #second > p {
+     background-color: lightskyblue;
+ }
+
+ #third {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    width: 400px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    position:relative;
+ }
+ /* media Queries */
+ h1 {
+     margin-bottom: 15px;
+ }
+
+ p{
+     border: 1px solid black;
+     margin-bottom: 15px;
+ }
+
+ #p1{
+     background-color: blue;
+     width: 300px;
+     height: 300px;
+ }
+
+ #p2{
+    background-color: rgb(21, 255, 0);
+    width: 50px;
+    height: 50px;
+}
+@media (min-width: 1200px) {
+    #p1{
+        background-color: rgb(255, 0, 13);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #p2{
+        background-color: rgb(229, 255, 0);
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #p1{
+        background-color: rgb(183, 0, 255);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #p2{
+        background-color: rgb(255, 0, 234);
+        width: 100px;
+        height: 100px;
+    }
+}
